@@ -3,27 +3,55 @@ $font_big: 32px;
 $font_mid: 16px;
 $font_small: 14.4px;
 
-body {
+html {
+    font-size: 100%;
+}
 
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 4%;
 }
 
 li {
-
+    list-style: none;
 }
 
 a {
 
 }
 
+img {
+    max-width: 100%;
+}
+
+.container {
+    background-color: aquamarine;
+}
+
 header {
 
-    .header__logo {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
+        .header__logo {
+
+            .logo {
+                max-width: 120px;
+            }
+        }
+
+        .header__nav {
+
+            ul {
+                display: flex;
+            }
+        }
     }
 
-    .header__nav {
-
-    }
+    
 }
 
 .main-visual-wrapper {

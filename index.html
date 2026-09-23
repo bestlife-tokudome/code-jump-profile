@@ -8,29 +8,31 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class="wrapper">
         <div class="container">
             <div class="header__logo">
-                <img class="logo" src="img/logo.svg" alt="Profile">
+                <a class="logo__link" href="#">
+                    <img class="logo__image" src="img/logo.svg" alt="Profile">
+                </a>
             </div>
             <div class="header__nav">
                 <ul>
-                    <li>About</li>
-                    <li>Bicycle</li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Bicycle</a></li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <section class="main-visual-wrapper">
+    <section class="main-visual-wrapper wrapper">
         <img class="main_visual__image" src="img/mainvisual.jpg">
     </section>
 
-    <section class="about-wrapper">
+    <section class="about-wrapper wrapper">
+        <div class="about__section-title-container section-title-container">
+            <h1 class="section-title">About</h1>
+        </div>
         <div class="container">
-            <div class="about__section-title">
-                <h1 class="section-title">About</h1>
-            </div>
             <div class="about__icon">
                 <img class="icon" src="img/about.jpg" alt="me">
             </div>
@@ -43,9 +45,9 @@
         </div>
     </section>
 
-    <section class="bicycle-wrapper">
+    <section class="bicycle-wrapper wrapper">
         <div class="container">
-            <div class="bicycle__section-title">
+            <div class="bicycle__section-title-container section-title-container">
                 <h1 class="section-title">Bicycle</h1>
             </div>
             <div class="article-list-container">
@@ -74,7 +76,7 @@
                 <div class="article-container">
                     <a href="#">
                         <div class="article__image">
-                                <img class="article-image" src="img/bicycle2.jpg">
+                                <img class="article-image" src="img/bicycle3.jpg">
                         </div>
                         <div class="article__text">
                             <h2 class="article-title">タイトルタイトル</h2>
@@ -86,7 +88,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="wrapper">
         <p class="copyright">&copy;2000 Profile</p>
     </footer>
 </body>
